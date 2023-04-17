@@ -7,7 +7,7 @@ This script allows you to send an audio file as a voice message to a VKontakte u
 To install the script, first make sure you have Python 3.8 or higher installed on your system. Then, clone this repository and run the installation script:
 
 ```bash
-git clone https://github.com/Yarovitsin/vk-audio-to_voice.git
+git clone https://github.com/Yarovitsin/vk-audio-to-voice.git
 cd vk-audio-to-voice
 sudo chmod +x install.sh
 ./install.sh
