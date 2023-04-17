@@ -17,39 +17,5 @@ then
     exit 1
 fi
 
-# Parse command-line arguments
-if [ $# -eq 0 ]
-then
-    echo "Usage: $0 [--token <VK API token>] [--user <VK user ID or screen name>] <file>"
-    exit 1
-fi
-
-while [ $# -gt 0 ]
-do
-    case "$1" in
-        --token)
-            TOKEN="$2"
-            shift
-            shift
-            ;;
-        --user)
-            USER="$2"
-            shift
-            shift
-            ;;
-        *)
-            FILE="$1"
-            shift
-            ;;
-    esac
-done
-
-# Check if the file exists
-if [ ! -f "$FILE" ]
-then
-    echo "The specified file '$FILE' does not exist."
-    exit 1
-fi
-
 # Execute the Python script with the command-line arguments
 python3 /usr/local/bin/vk-audio-to-voice.py --token "$TOKEN" --user "$USER" "$FILE"
