@@ -108,7 +108,7 @@ def send_message(token: str, user_id: str, doc_id: Tuple[int, int]) -> None:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--token', help='VK API token')
-    parser.add_argument('--user', help='User ID or screen name')
+    parser.add_argument('user', help='User ID or screen name')
     parser.add_argument('file', help='Path to the file to send')
     args = parser.parse_args()
 
