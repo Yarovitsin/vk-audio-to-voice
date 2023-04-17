@@ -4,7 +4,7 @@
 pip install -r requirements.txt
 
 # Set up the Bash script
-chmod +x script.sh
+chmod +x vk-audio-to-voice.sh
 sudo ln -s $(pwd)/vk-audio-to-voice.sh /usr/local/bin/vk-audio-to-voice
 
 # Set up the Python script
