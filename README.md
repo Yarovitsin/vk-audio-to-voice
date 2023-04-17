@@ -8,7 +8,7 @@ To install the script, first make sure you have Python 3.8 or higher installed o
 
 ```bash
 git clone https://github.com/Yarovitsin/vk-audio-message-sender.git
-cd vk-audio-message-sender
+cd vk-audio-to-voice
 ./install.sh
 ```
 
