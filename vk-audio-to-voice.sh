@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Change to the directory where your Python script is located
-cd /usr/local/bin/vk-audio-to-voice.py
+cd /usr/local/bin/
 
 # Check if the Python executable is installed
 if ! command -v python3 &> /dev/null
@@ -52,4 +52,4 @@ then
 fi
 
 # Execute the Python script with the command-line arguments
-python3 /path/to/python/script/main.py --token "$TOKEN" --user "$USER" "$FILE"
+python3 /usr/local/bin/vk-audio-to-voice.py --token "$TOKEN" --user "$USER" "$FILE"
